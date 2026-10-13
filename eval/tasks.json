@@ -1,0 +1,12 @@
+[
+  {"id": "letter_uz", "doc": "note.docx", "prompt": "Read the client note in {doc} and write a short, polite letter in Uzbek to the client about the overdue loan."},
+  {"id": "summary_ru", "doc": "letter.pdf", "prompt": "Summarise the letter in {doc} in Russian, in three sentences."},
+  {"id": "extract", "doc": "deck.pptx", "prompt": "From the slides in {doc}, list every client and every identifier mentioned, as a table."},
+  {"id": "table_question", "doc": "clients.xlsx", "prompt": "In {doc}, which client has the most days overdue, and what is that client's debt?"},
+  {"id": "strict_sum", "doc": "clients.csv", "strict": true, "prompt": "Using {doc}, compute the total of the qarz summasi column and the average of the kechikish kunlari column."},
+  {"id": "doc_summary", "doc": "page.html", "prompt": "Summarise the client record in {doc} in a short paragraph."},
+  {"id": "email_en", "doc": "letter.pdf", "prompt": "Based on {doc}, draft a short email in English to the client asking them to call the branch."},
+  {"id": "compare", "doc": "clients.xlsx", "prompt": "In {doc}, compare the first two clients: who owes more, who is later, and which one should be called first?"},
+  {"id": "next_steps", "doc": "notes.md", "prompt": "Read the call plan in {doc} and write a numbered list of next steps for each person in it."},
+  {"id": "translate", "doc": "note.docx", "prompt": "Translate the note in {doc} into English, keeping every name and identifier."}
+]

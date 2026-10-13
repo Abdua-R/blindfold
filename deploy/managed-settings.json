@@ -1,0 +1,36 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8787",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_FEEDBACK_COMMAND": "1",
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_DISABLE_OFFICIAL_MARKETPLACE_AUTOINSTALL": "1",
+    "ENABLE_CLAUDEAI_MCP_SERVERS": "false",
+    "CLAUDE_CODE_DISABLE_ARTIFACT": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0"
+  },
+  "cleanupPeriodDays": 7,
+  "showThinkingSummaries": false,
+  "skipWebFetchPreflight": true,
+  "enableArtifact": false,
+  "disableRemoteControl": true,
+  "disableClaudeAiConnectors": true,
+  "feedbackDrafts": "off",
+  "feedbackSurveyRate": 0,
+  "voice": { "enabled": false },
+  "strictKnownMarketplaces": [],
+  "disableSideloadFlags": true,
+  "allowManagedHooksOnly": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Bash|PowerShell",
+        "hooks": [{ "type": "command", "command": "blindfold", "args": ["hook"] }]
+      }
+    ]
+  }
+}
